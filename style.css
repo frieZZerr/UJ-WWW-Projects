@@ -1,0 +1,101 @@
+body {
+    background-color: #dadada;
+    margin: 0;
+    padding: 0;
+}
+.site #main {
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 3px;
+    margin-bottom: 2px;
+}
+.site #header {
+    background: #dadada;
+    border-bottom: 5px solid #4f4f4f;
+    padding: 0 0px 0 0px;
+    height: 100px;
+}
+.site #header h1 {
+    margin: 0;
+    padding: 10px 10px;
+    font-family: Verdana;
+    font-size: xx-large;
+    text-align: center;
+}
+.site #header h2 {
+    margin: 0;
+    font-family: Verdana;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: medium;
+    text-align: center;
+}
+.site #maincontent {
+    margin: 2px;
+    padding: 0 0px 0 0px;
+}
+.site #maincontent #sidebarLeft {
+    float: left;
+    width: 155px;
+    padding: 1px 0px 0px 1px;
+}
+.site #maincontent #content {
+    margin: 5px 5px 5px 168px;
+    padding: 0px 10px;
+    border-left: 3px solid #4f4f4f;
+    height: auto;
+}
+.site #maincontent #content h1 {
+    font-family: Verdana;
+    font-size: larger;
+    text-align: center;
+}
+.site #maincontent #content #photo {
+    float: left;
+    width: 40%;
+    padding: 0px 15px 15px 0px;
+    border-right: 2px solid #4f4f4f;
+}
+.site #foot {
+    margin: 2px;
+    padding: 0 0px 0 0px;
+    border-top: 1px solid #4f4f4f;
+    height: 30px;
+}
+.site #foot p {
+    padding: 0px 10px;
+    font-family: Verdana;
+    font-size: 10px;
+}
+
+#menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#menu li {
+    font-family: "Courier New", Courier, serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    width: 155px;
+}
+#menu a {
+    display: block;
+    border-bottom: 1px solid #4f4f4f;
+    border-top: 1px solid #4f4f4f;
+    margin: 0;
+    padding: 6px 12px;
+    text-decoration: none;
+}
+#menu a:hover {
+    background: #999999;
+    font-weight: bold;
+}
+img {
+    width:80%;
+    height:auto;
+}
+figcaption {
+    font-style:italic;
+}
