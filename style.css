@@ -1,65 +1,59 @@
 body {
-    background-color: #dadada;
+    background-color: #21b2a6;
     margin: 0;
     padding: 0;
 }
+.site {
+    color: #EAEAEA;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
 .site #main {
-    margin: 0 auto;
-    width: 80%;
-    margin-top: 3px;
-    margin-bottom: 2px;
+    margin: auto;
+    width: 90%;
 }
 .site #header {
-    background: #dadada;
-    border-bottom: 5px solid #4f4f4f;
-    padding: 0 0px 0 0px;
-    height: 100px;
+    background: #3C4048;
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
 }
 .site #header h1 {
     margin: 0;
-    padding: 10px 10px;
-    font-family: Verdana;
+    font-family: sans-serif;
     font-size: xx-large;
-    text-align: center;
+    text-align: left;
+    position: absolute;
+    line-height: inherit;
+    left: 25px;
+    letter-spacing: 3px;
 }
-.site #header h2 {
-    margin: 0;
-    font-family: Verdana;
-    font-weight: lighter;
-    font-style: italic;
-    font-size: medium;
-    text-align: center;
-}
-.site #maincontent {
+.site #mainContent {
     margin: 2px;
     padding: 0 0px 0 0px;
 }
-.site #maincontent #sidebarLeft {
+.site #mainContent #sidebarLeft {
     float: left;
-    width: 155px;
-    padding: 1px 0px 0px 1px;
+    margin-right: 10px;
+    padding-right: 10px;
 }
-.site #maincontent #content {
-    margin: 5px 5px 5px 168px;
+.site #mainContent #content {
+    margin: 5px 5px 5px 213px;
     padding: 0px 10px;
-    border-left: 3px solid #4f4f4f;
+    border-left: 3px solid #3C4048;
     height: auto;
 }
-.site #maincontent #content h1 {
+.site #mainContent #content h1 {
     font-family: Verdana;
     font-size: larger;
     text-align: center;
 }
-.site #maincontent #content #photo {
-    float: left;
-    width: 40%;
-    padding: 0px 15px 15px 0px;
-    border-right: 2px solid #4f4f4f;
-}
 .site #foot {
     margin: 2px;
     padding: 0 0px 0 0px;
-    border-top: 1px solid #4f4f4f;
+    border-top: 1px solid #3C4048;
     height: 30px;
 }
 .site #foot p {
@@ -74,28 +68,37 @@ body {
     padding: 0;
 }
 #menu li {
-    font-family: "Courier New", Courier, serif;
+    font-family: Verdana;
     font-size: 18px;
     margin: 0;
     padding: 0;
-    width: 155px;
+    width: 200px;
 }
 #menu a {
     display: block;
-    border-bottom: 1px solid #4f4f4f;
-    border-top: 1px solid #4f4f4f;
+    border-bottom: 1px solid #3C4048;
+    border-top: 1px solid #3C4048;
     margin: 0;
     padding: 6px 12px;
-    text-decoration: none;
 }
 #menu a:hover {
-    background: #999999;
+    background: #3C4048;
     font-weight: bold;
 }
-img {
-    width:80%;
-    height:auto;
+#leftPhoto {
+    font-style: italic;
+    border-right: 2px solid #3C4048;
+    margin: 5px;
+    float: left;
 }
-figcaption {
-    font-style:italic;
+#leftPhoto img {
+    width: 40%;
+}
+#chunk {
+    padding-left: 15px;
+}
+#content h1 {
+    background-color: #3C4048;
+    padding: 10px 0 10px 0;
+    letter-spacing: 1px;
 }
