@@ -9,8 +9,6 @@
 html {
     box-sizing:border-box;
     overflow-x:hidden;
-    -ms-text-size-adjust:100%;
-    -webkit-text-size-adjust:100%
 }
 body { margin:0 }
 html, body {
