@@ -16,19 +16,19 @@ function Register() {
 
     const onSubmit = (data) => {
         axios.post("http://localhost:3001/auth", data).then(() => {
-            console.log("data");
+            alert("User successfully registered!");
         });
     };
 
-    return <div>
+    return <div className="register">
         <Formik initialValues={initialValues} onSubmit={onSubmit} validationSchema={validationSchema} >
                 <Form className="form-container">
                     <label>Username:</label>
                     <ErrorMessage name="username" component="span" />
-                    <Field id="input-create-post" name="username" placeholder="Username" />
+                    <Field id="input-create-post" name="username" placeholder="Username" autocomplete="off" />
                     <label>Password:</label>
                     <ErrorMessage name="password" component="span" />
-                    <Field id="input-create-post" type="password" name="password" placeholder="Password" />
+                    <Field id="input-create-post" type="password" name="password" placeholder="Password" autocomplete="off" />
 
                     <button type="submit"> Register </button>
                 </Form>

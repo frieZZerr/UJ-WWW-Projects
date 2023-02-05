@@ -41,10 +41,10 @@ function CreatePost() {
                 <Form className="form-container">
                     <label>Title:</label>
                     <ErrorMessage name="title" component="span" />
-                    <Field id="input-create-post" name="title" placeholder="Title" />
+                    <Field id="input-create-post" name="title" placeholder="Title" autocomplete="off" />
                     <label>Post:</label>
                     <ErrorMessage name="postText" component="span" />
-                    <Field id="input-create-post" name="postText" placeholder="Post Text" />
+                    <Field id="input-create-post" name="postText" placeholder="Post Text" autocomplete="off" />
 
                     <button type="submit">Create Post</button>
                 </Form>

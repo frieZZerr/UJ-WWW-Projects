@@ -8,6 +8,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #E7ECEF;
 }
 
 .post {
@@ -17,9 +18,9 @@ body {
   display: flex;
   flex-direction: column;
   margin-top: 50px;
-  border: 1px solid lightgray;
+  margin-bottom: 25px;
+  border: 1px solid #8B8C89;
   font-family: Arial, Helvetica, sans-serif;
-
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
@@ -29,17 +30,25 @@ body {
 }
 .post .title {
   flex: 20%;
-  border-bottom: 1px solid lightgray;
-  background-color: dodgerblue;
+  border-bottom: 1px solid #8B8C89;
+  background-color: #274C77;
   display: grid;
   place-content: center;
-  color: white;
+  color: #E7ECEF;
+}
+
+.post .title label {
+  margin: 0 auto;
+  font-size: medium;
 }
 
 .post .body {
   flex: 60%;
   display: grid;
   place-content: center;
+  margin-right: 20px;
+  margin-left: 20px;
+  text-align: justify;
 }
 
 .post .footer {
@@ -48,10 +57,17 @@ body {
   display: flex;
   align-items: center;
   padding-left: 15px;
-  background-color: dodgerblue;
-  color: white;
+  background-color: #274C77;
+  color: #E7ECEF;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+
+.post .footer .post-delete-btn {
+  margin: 0 auto;
+  margin-right: 10px;
+  align-items: right;
+  width: auto;
 }
 
 /* CREATE POST PAGE CSS */
@@ -71,7 +87,7 @@ body {
   width: 500px;
   height: auto;
   padding: 20px;
-  border: 5px solid dodgerblue;
+  border: 3px solid #274C77;
   border-radius: 5px;
 }
 
@@ -79,27 +95,28 @@ body {
   height: 40px;
   margin-top: 10px;
   margin-bottom: 10px;
-  border: 2px solid grey;
+  border: 2px solid #8B8C89;
   border-radius: 5px;
   padding-left: 10px;
   font-size: 20px;
+  background-color: #E7ECEF;
 }
 
 .form-container button {
   margin-top: 15px;
   height: 40px;
   border: none;
-  background-color: lightskyblue;
+  background-color: #6096BA;
   border-radius: 5px;
-  color: white;
+  color: #E7ECEF;
 }
 
 .form-container button:hover {
   cursor: pointer;
-  background-color: dodgerblue;
+  background-color: #274C77;
 }
 
-span {
+.form-container span {
   color: red;
 }
 
@@ -108,7 +125,7 @@ span {
 .navbar {
   width: 100%;
   height: 70px;
-  background-color: dodgerblue;
+  background-color: #274C77;
   display: flex;
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
@@ -132,7 +149,7 @@ span {
 .navbar a {
   margin-left: 20px;
   text-decoration: none;
-  color: white;
+  color: #E7ECEF;
 }
 
 .navbar button {
@@ -140,13 +157,13 @@ span {
   height: 40px;
   cursor: pointer;
   margin-right: 10px;
-  background-color: white;
+  background-color: #E7ECEF;
 }
 
 .navbar h1 {
   text-align: right;
   margin-right: 10px;
-  color: white;
+  color: #E7ECEF;
   font-weight: lighter;
 }
 
@@ -192,12 +209,13 @@ button {
 }
 
 .add-comment-container button {
-  background-color: dodgerblue;
-  color: white;
+  background-color: #274C77;
+  color: #E7ECEF;
 }
 
 .add-comment-container input {
-  border: 2px solid dodgerblue;
+  border: 2px solid #274C77;
+  background-color: #E7ECEF;
 }
 
 .right-side .list-of-comments {
@@ -211,10 +229,30 @@ button {
 .list-of-comments .comment {
   width: 70%;
   height: auto;
-  padding: 30px;
-  border: 1px solid lightgray;
+  padding: 20px;
+  border: 1px solid #8B8C89;
   border-radius: 5px;
   margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-of-comments .comment .left {
+  flex-grow: 1;
+  max-width: 75%;
+  word-wrap: break-word;
+}
+
+.list-of-comments .comment .right {
+  font-weight: bold;
+  text-align: right;
+}
+
+.list-of-comments .comment button {
+  background-color: #274C77;
+  color: #E7ECEF;
+  width: 50px;
 }
 
 #individual {
@@ -240,6 +278,7 @@ button {
   width: 100%;
   height: 100vh;
   padding-top: 100px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .login-container input,
@@ -252,10 +291,29 @@ button {
 }
 
 .login-container button {
-  background-color: dodgerblue;
-  color: white;
+  background-color: #274C77;
+  color: #E7ECEF;
 }
 
 .login-container input {
-  border: 2px solid dodgerblue;
+  border: 2px solid #274C77;
+  background-color: #E7ECEF;
+}
+
+.login-container .create-acc {
+  display: grid;
+  text-align: center;
+  font-size: small;
+  margin-top: 25px;
+}
+
+.login-container .create-acc button {
+  width: auto;
+}
+
+/* REGISTER */
+
+.register {
+  margin-top: 100px;
+  font-family: Arial, Helvetica, sans-serif;
 }

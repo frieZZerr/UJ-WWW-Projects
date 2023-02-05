@@ -69,16 +69,27 @@ function Post() {
     });
   };
 
+  const date = new Date(postObject.createdAt);
+  const createdAt = date.toLocaleDateString('default', {
+    day: 'numeric',
+    month: 'short',
+    year: 'numeric'
+  });
+  console.log(date);
+
   return (
     <div className="post-page">
       <div className="left-side">
         <div className="post" id="individual">
-          <div className="title"> {postObject.title} </div>
+          <div className="title">
+            {postObject.title}
+            <label> {createdAt} </label>
+          </div>
           <div className="body"> {postObject.postText} </div>
           <div className="footer">
             {postObject.username}
             { authState.username === postObject.username && (
-              <button onClick={ () => {
+              <button className="post-delete-btn" onClick={ () => {
                 deletePost(postObject.id);
                 }}> Delete Post </button>
               )
@@ -94,10 +105,14 @@ function Post() {
         <div className="list-of-comments">
           {comments.map((comment, key) => {
             return <div key={key} className="comment">
-              {comment.commentBody}
-              <label> {comment.username} </label>
-              {authState.username === comment.username && <button onClick={ () => { deleteComment(comment.id) } }> X </button>}
-              </div>
+              <p className="left">
+                {comment.commentBody}
+              </p>
+              <span className="right">
+                <label> {comment.username} </label>
+                {authState.username === comment.username && <button onClick={ () => { deleteComment(comment.id) } }> X </button>}
+              </span>
+            </div>
           })}
         </div>
       </div>
