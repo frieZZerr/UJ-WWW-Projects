@@ -13,7 +13,9 @@ function Login() {
     const login = () => {
         const data = { username: username, password: password };
         axios.post("http://localhost:3001/auth/login", data).then((response) => {
-            if( response.data.error ) alert(response.data.error);
+            if( response.data.error ) {
+                alert(response.data.error);
+            }
             else {
                 localStorage.setItem("accessToken", response.data.token);
                 setAuthState({ username: response.data.username, id: response.data.id, status: true });
@@ -29,6 +31,11 @@ function Login() {
         <input type="password" placeholder="Password..." onChange={(event) => { setPassword(event.target.value); }}></input>
 
         <button onClick={login}> Login </button>
+
+        <div className="create-acc">
+            <label> Don't have account yet? </label>
+            <button onClick={ () => { navigate("/register") } }> Register </button>
+        </div>
     </div>
 }
 
