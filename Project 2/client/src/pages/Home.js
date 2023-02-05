@@ -7,6 +7,7 @@ function Home() {
 
     const [listOfPosts, setListOfPosts] = useState([]);
     const navigate = useNavigate();
+    
     useEffect( () => {
         axios.get("http://localhost:3001/posts")
         .then( (response) => {
